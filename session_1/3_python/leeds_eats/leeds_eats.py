@@ -1,11 +1,24 @@
 import sqlite3
+def get_connection(db_path="food_delivery.db"):
+    """
+    Establish a connection to the SQLite database.
+    Returns a connection object.
+    """
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row  # Allows access by column name
+    return conn
 
 # ==================================================
 # Section 1 – Summaries
 # ==================================================
 
 def total_customers(conn):
-    pass
+    query = '''
+        SELECT COUNT(orders.order_id) as TotalOrders
+
+    '''
+
+
 
 
 def customer_signup_range(conn):

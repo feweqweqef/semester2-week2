@@ -12,6 +12,7 @@ DATE('now', '-14 days') /* you can add or subtract days */
 
 1. **List all loans**  
 Show book title, member name, and loan date.
+SELECT Books.title AS book_title, Members.name AS member_name, Loans.loan_date FROM Loans JOIN Books ON Loans.book_id = Books.id JOIN Members ON Loans.member_id = Members.id;
 
 2. **Books and loans**  
 List all books and any loans associated with them.
