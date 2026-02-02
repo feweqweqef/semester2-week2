@@ -14,11 +14,9 @@ def get_connection(db_path="food_delivery.db"):
 
 def total_customers(conn):
     query = '''
-        SELECT COUNT(orders.order_id) as TotalOrders
-
+    SELECT COUNT(customers.customer_id) AS Total Customers 
+    FROM customers;
     '''
-
-
 
 
 def customer_signup_range(conn):
