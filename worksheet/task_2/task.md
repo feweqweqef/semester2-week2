@@ -11,6 +11,7 @@ tickets(**ticket_id**, screening_id, customer_id, price)
 You are provided with a Python file called `cinema.py` containing function stubs.
 You should complete the functions as described below.
 
+
 You can test your functions by running `test.py`.
 
 ## customer_tickets(conn, customer_id)
